@@ -9,13 +9,13 @@ public class BaseTest extends WebConnector {
 
 	@Before 
 	public void setup() throws Exception {
-		System.setProperty("Webdriver.gecko.driver", "/next/src/test/java/resources/geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", "../next/src/test/java/resources/geckodriver.exe");
 		driver = new FirefoxDriver();
 	}
 	
 	@After
 	public void tearDown() throws Exception{
-		driver.quit();
+	//	driver.quit();
 
 	}
 	
